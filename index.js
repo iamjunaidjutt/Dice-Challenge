@@ -52,3 +52,12 @@ switch (randomNum2) {
         console.log("wrong random number!");
 }
 
+let h1El = document.querySelector("h1");
+if (randomNum1 > randomNum2) {
+    h1El.textContent = "🚩 Player1 Wins!";
+} else if(randomNum1 < randomNum2) {
+    h1El.textContent = "Player2 Wins! 🚩";
+} else {
+    h1El.textContent = "Draw!";
+}
+
